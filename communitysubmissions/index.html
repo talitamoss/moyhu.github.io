@@ -64,6 +64,20 @@
       transform: translateY(-2px);
     }
 
+    .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
     /* Footer at the bottom */
     footer {
       background-color: #2d6a4f;
@@ -76,6 +90,7 @@
 </head>
 <body>
   <div class="top-banner">
+    <a href="javascript:history.back()" class="back-button">&larr; Back</a>
     <h1>Moyhu</h1>
     <div class="slogan">Gateway to the King Valley</div>
   </div>
