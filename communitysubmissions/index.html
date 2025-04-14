@@ -16,29 +16,29 @@
     }
     
     /* Top banner section */
-    .top-banner {
+.top-banner {
   background-color: #2d6a4f; /* Green background */
   color: goldenrod;
   text-align: center;
-  padding: 0 20px; /* Remove top and bottom padding */
-  display: flex; /* Enable flexbox */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center text horizontally */
-  height: 100px; /* Set a fixed height */
+  padding: 20px; /* Add padding for spacing */
   position: relative; /* Make the banner a positioning context */
+  display: block; /* Ensure elements stack vertically */
 }
 
-    .top-banner h1 {
-      margin: 0;
-      font-size: 3em;
-    }
+/* Title styling (optional for spacing) */
+.top-banner h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 3em; /* Ensure the font size is prominent */
+}
 
-    .top-banner .slogan {
-      font-size: 1.3em;
-      font-style: italic;
-      color: #fff8dc;
-      margin-top: 10px;
-    }
+/* Slogan styling */
+.top-banner .slogan {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #fff8dc; /* Light color for readability */
+  margin-top: 10px; /* Add spacing below the title */
+}
+
 
     /* Button section setup */
     .button-section {
@@ -69,16 +69,17 @@
       transform: translateY(-2px);
     }
 
- /* Back button styling */
+
+/* Back button styling */
 .back-button {
   position: absolute; /* Position relative to the banner */
-  top: 50%; /* Move it to the center vertically */
+  top: 50%; /* Adjust vertical positioning */
   left: 20px; /* Keep it 20px from the left */
-  transform: translateY(-50%); /* Adjust for the button's height */
+  transform: translateY(-50%); /* Vertically center the button */
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  color: #2d6a4f; /* Green text */
+  color: white; /* White text */
   background-color: #ffd700; /* Gold background */
   padding: 10px 20px; /* Padding for box effect */
   border-radius: 10px; /* Rounded corners */
@@ -88,8 +89,8 @@
 
 .back-button:hover {
   background-color: #e6c200; /* Slightly darker gold on hover */
-  transform: translate(-50%, -2px); /* Slight lift on hover */
-  text-decoration: none;
+  transform: translateY(-50%) translateX(-2px); /* Slight lift on hover */
+  text-decoration: none; /* Ensure no underline */
 }
 
     /* Footer at the bottom */
