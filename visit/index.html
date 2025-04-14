@@ -21,6 +21,7 @@
       color: goldenrod;
       text-align: center;
       padding: 40px 20px 20px;
+      position: relative; /* Make the banner a positioning context */
     }
 
     .top-banner h1 {
@@ -64,6 +65,28 @@
       transform: translateY(-2px);
     }
 
+    /* Back button styling */
+.back-button {
+  position: absolute; /* Position relative to the banner */
+  top: 50%; /* Adjust vertical positioning */
+  left: 20px; /* Keep it 20px from the left */
+  transform: translateY(-50%); /* Vertically center the button */
+  text-decoration: none;
+  padding: 10px 20px; /* Padding for box effect */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2d6a4f; /* Green text */
+  background-color: #ffd700; /* Gold background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.back-button:hover {
+  background-color: #e6c200; /* Slightly darker gold on hover */
+  transform: translateY(-2px);
+}
+
     /* Footer at the bottom */
     footer {
       background-color: #2d6a4f;
@@ -76,6 +99,7 @@
 </head>
 <body>
   <div class="top-banner">
+    <a href="#" class="back-button">Back</a>
     <h1>Moyhu</h1>
     <div class="slogan">Gateway to the King Valley</div>
   </div>
