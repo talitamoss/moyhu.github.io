@@ -17,11 +17,16 @@
     
     /* Top banner section */
     .top-banner {
-      background-color: #2d6a4f;
-      color: goldenrod;
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
+  background-color: #2d6a4f; /* Green background */
+  color: goldenrod;
+  text-align: center;
+  padding: 0 20px; /* Remove top and bottom padding */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center text horizontally */
+  height: 100px; /* Set a fixed height */
+  position: relative; /* Make the banner a positioning context */
+}
 
     .top-banner h1 {
       margin: 0;
@@ -64,25 +69,27 @@
       transform: translateY(-2px);
     }
 
- .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+ /* Back button styling */
+.back-button {
+  position: absolute; /* Position relative to the banner */
+  top: 50%; /* Move it to the center vertically */
+  left: 20px; /* Keep it 20px from the left */
+  transform: translateY(-50%); /* Adjust for the button's height */
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
-  color: white; /* Make text white */
-  background-color: #ffd700; /* Match button background */
-  padding: 10px 20px; /* Add padding for box effect */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover transition */
+  color: #2d6a4f; /* Green text */
+  background-color: #ffd700; /* Gold background */
+  padding: 10px 20px; /* Padding for box effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
 }
 
 .back-button:hover {
-  background-color: #e6c200; /* Darker gold on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+  background-color: #e6c200; /* Slightly darker gold on hover */
+  transform: translate(-50%, -2px); /* Slight lift on hover */
+  text-decoration: none;
 }
 
     /* Footer at the bottom */
