@@ -14,27 +14,31 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
+    
     /* Top banner section */
-    .top-banner {
-      background-color: #2d6a4f;
-      color: goldenrod;
-      text-align: center;
-      padding: 40px 20px 20px;
-      position: relative; /* Make the banner a positioning context */
-    }
+.top-banner {
+  background-color: #2d6a4f; /* Green background */
+  color: goldenrod;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+  position: relative; /* Make the banner a positioning context */
+  display: block; /* Ensure elements stack vertically */
+}
 
-    .top-banner h1 {
-      margin: 0;
-      font-size: 3em;
-    }
+/* Title styling (optional for spacing) */
+.top-banner h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 3em; /* Ensure the font size is prominent */
+}
 
-    .top-banner .slogan {
-      font-size: 1.3em;
-      font-style: italic;
-      color: #fff8dc;
-      margin-top: 10px;
-    }
+/* Slogan styling */
+.top-banner .slogan {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #fff8dc; /* Light color for readability */
+  margin-top: 10px; /* Add spacing below the title */
+}
+
 
     /* Button section setup */
     .button-section {
@@ -65,7 +69,7 @@
       transform: translateY(-2px);
     }
 
-  
+
 /* Back button styling */
 .back-button {
   position: absolute; /* Position relative to the banner */
@@ -73,19 +77,20 @@
   left: 20px; /* Keep it 20px from the left */
   transform: translateY(-50%); /* Vertically center the button */
   text-decoration: none;
-  padding: 10px 20px; /* Padding for box effect */
-  border-radius: 10px; /* Rounded corners */
   font-size: 1.2em;
   font-weight: bold;
   color: #2d6a4f; /* Green text */
   background-color: #ffd700; /* Gold background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  padding: 10px 20px; /* Padding for box effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
 }
 
 .back-button:hover {
   background-color: #e6c200; /* Slightly darker gold on hover */
-  transform: translateY(-2px);
+  transform: translateY(-50%) translateX(-2px); /* Slight lift on hover */
+  text-decoration: none; /* Ensure no underline */
 }
 
     /* Footer at the bottom */
@@ -100,14 +105,15 @@
 </head>
 <body>
   <div class="top-banner">
-    <a href="#" class="back-button">Back</a>
-    <h1>Moyhu</h1>
-    <div class="slogan">Gateway to the King Valley</div>
+    <a href="javascript:history.back()" class="back-button">&larr; Back</a>
+    <h1>Visit</h1>
+    <div class="slogan">In & Around Moyhu</div>
   </div>
 
+  
   <div class="button-section">
     <a href="#">Eat & Drink</a>
-    <a href="#">Check out</a>
+    <a href="#">Check Out</a>
     <a href="#">Events</a>
   </div>
 
